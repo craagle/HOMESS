@@ -1,0 +1,29 @@
+PISTUDIO 1.2.80 — CAMERA / DÁN CẠNH / MẪU CNC
+
+PIVIEW
+- Bấm Quét QR mở ngay ô camera nổi, bỏ hộp xác nhận riêng lặp lại của PIVIEW.
+- Kéo biểu tượng ở góc trái để di chuyển ô camera; có zoom 1x / 2x / 4x và nút X.
+- Nhận đúng mã: tự dừng camera, đóng ô quét và chọn tấm trên 3D. QR khác đơn hàng không đóng camera; quét trùng không tăng số lượng.
+- Mở lớp quét phủ vùng trang và yêu cầu toàn màn hình khi trình duyệt hỗ trợ thao tác này. Không chặn quyền thoát toàn màn hình của trình duyệt/hệ điều hành. Khi trình duyệt không hỗ trợ, ô nổi vẫn hoạt động.
+- Cấp quyền camera vẫn thuộc trình duyệt. File content:// và chế độ xem nhanh iPhone vẫn cần mở bộ xem HTTPS; bộ xem ưu tiên mạng, dùng cache offline khi đã lưu. Không thể tự bỏ giới hạn camera của hệ điều hành.
+- Không cần chuyển tab sau mỗi lần quét: tiếp tục xem và quét trong trang 3D đã mở.
+
+PIMAT
+- Khi chọn dán cạnh theo vật liệu từng tấm: tên tự động là !TÊN_VẬT_LIỆU_0.5MM_22MM.
+- Giữ các tên vật liệu cạnh nhập riêng và dữ liệu đã dán trước đó.
+
+PIGCODE
+- Tab MÁY / POST: chọn THÊM MẪU rồi TẠO MẪU, chọn post .PP đúng máy.
+- Ba mẫu: CNC 1 ĐẦU (T1), CNC 4 ĐẦU (T1–T4), CNC 1 ĐẦU · 12 DAO (T1–T12).
+- Tạo cấu hình mới, không thay máy đang lưu. Thông số dao ban đầu là giá trị để chỉnh; cấu hình máy và lệnh đổi đầu/dao vẫn theo post .PP.
+- Mỗi T một màu trong bảng dao, đường mô phỏng và nhãn T tại đầu dao đang chạy. G0 dùng nét đứt; đường cắt dùng nét liền đậm hơn.
+- Danh sách màu được tính một lần khi nạp đường dao; giữ bộ nhớ ảnh đường dao để mô phỏng dài không vẽ lại toàn bộ mỗi khung.
+
+ÁP DỤNG
+Đóng Rhino, giải nén toàn bộ gói, chạy Install.cmd. Bộ cài nhận tất cả Rhino 7.38+ / 8 / 9 có trên máy và sao lưu bản cũ. Mở lại Rhino và xuất HTML mới. Tải lại tab PIVIEW khi có mạng để lấy bộ quét mới.
+
+KIỂM TRA VÀ GIỚI HẠN
+22 nhóm hồi quy chạy trong Rhino.exe 7.39 và 8.36 (.NET 8), 1.359 kiểm tra mỗi host. Kiểm tra lại plugin sau cài bằng runtime mặc định; xem RELEASE-VALIDATION.json.
+QR được kiểm tra bằng luồng canvas, mã QR thật và trình duyệt desktop ở các kích thước 390 / 768 / 1440 px. Chưa kiểm tra camera vật lý Android/iPhone trong lượt này.
+Rhino 9 chưa có trên máy: đã build và kiểm tra tải binary/metadata/JSON trên .NET 10, chưa thử lệnh trong Rhino 9 thật. Chưa thử cắt CNC vật lý.
+Gói publish được chuẩn bị riêng; chưa đẩy PIStudio 1.2.80 lên GitHub/Codeberg.

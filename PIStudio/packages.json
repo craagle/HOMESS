@@ -1,5 +1,5 @@
 {
-  "Version": "1.2.80.0",
+  "Version": "1.2.86.0",
   "Platform": "Windows x64",
   "Packages": [
     {
@@ -7,35 +7,35 @@
       "Runtime": "netfx",
       "File": "PISTUDIO.rhp",
       "MinimumRhino": "7.38.24338.17001",
-      "Sha256": "a5dfcb1c49a8d5edf52ea7f70101f609d756ee33be3d6a4c8405bc83b1b7c315"
+      "Sha256": "f5ac65796567da95b10df999b3db7a4def7a89434b953b68768e997bdc2729f3"
     },
     {
       "Rhino": 8,
       "Runtime": "net7",
       "File": "Rhino8/net7/PISTUDIO.rhp",
       "MinimumRhino": "8.0.0.0",
-      "Sha256": "0c5c1bac5bfe92304dba5f734eb3a5a9e3390965be8d31e821a67522019e088e"
+      "Sha256": "06e44696f4b5d8ec2a26fb2d9c5a16404d3516126264bc93994f5ebdffadf14b"
     },
     {
       "Rhino": 8,
       "Runtime": "netfx",
       "File": "Rhino8/netfx/PISTUDIO.rhp",
       "MinimumRhino": "8.0.0.0",
-      "Sha256": "1dd9e8ce605bd83f57639fee9b93093e5c536b4fc8380ce01ae1e471482a112c"
+      "Sha256": "26761a8515a60f9c27517c848bfcc6a67221efe7547683f63f2902e707289841"
     },
     {
       "Rhino": 9,
       "Runtime": "net10",
       "File": "Rhino9/net10/PISTUDIO.rhp",
       "MinimumRhino": "9.0.0.0",
-      "Sha256": "056dc96dadd8ddd19ef3ac208563ffeee58827ec0351f666dc369ee9af78d2ab"
+      "Sha256": "b7652b11bc5e22eab26bdd40b926bc1b9e43e4fbce22c8532c6cd32daaada1dc"
     },
     {
       "Rhino": 9,
       "Runtime": "netfx",
       "File": "Rhino9/netfx/PISTUDIO.rhp",
       "MinimumRhino": "9.0.0.0",
-      "Sha256": "d52505f450a87da4592b73e38d8ef8e639c095c66997d6e533e700896fe43bf6"
+      "Sha256": "712f978daa102ef0e628b5054a1995f5d948211fbd119bcf0a93ad3290b13f92"
     }
   ]
 }

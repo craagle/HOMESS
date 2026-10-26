@@ -88,7 +88,7 @@ function Invoke-InstallTransaction($Plans,[string]$BackupRoot,[switch]$Uninstall
    if(-not $Uninstall){Reg-Register $plan.RegisterKey $plan.Target}
    if(-not $Uninstall){foreach($fix in $plan.RuntimeFix){Reg-WriteString $fix.Key $fix.Name $fix.Value;if((Reg-Value $fix.Key $fix.Name) -ne $fix.Value){throw 'Khong luu duoc cau hinh runtime Rhino.'}}}
   }
-  [pscustomobject]@{Version='1.2.80';Uninstall=[bool]$Uninstall;Plans=$Plans;Registry=$registry;Binaries=$binaries;RuntimeSettings=$runtimeSettings;Completed=(Get-Date).ToString('o')} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $backup 'installation.json') -Encoding UTF8
+  [pscustomobject]@{Version='1.2.81';Uninstall=[bool]$Uninstall;Plans=$Plans;Registry=$registry;Binaries=$binaries;RuntimeSettings=$runtimeSettings;Completed=(Get-Date).ToString('o')} | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $backup 'installation.json') -Encoding UTF8
   return $backup
  }catch{
   $failure=$_;$rollback=@()
